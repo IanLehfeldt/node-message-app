@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.post('/newMessage', function (req,res){
 	console.log('Message post was hit!!');
 	messages.push(req.body);
-	console.log(messages);
+	//console.log(messages);
 	res.sendStatus(201);
 });
 
